@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ControlledComponentDemo from './components/ControlledComponentDemo';
 import EventHandlerDemo from './components/EventHandlerDemo';
+import KeyPressDemo from './components/KeyPressDemo';
 
 function App() {
   const [number, setNumber] = useState(1)
@@ -12,7 +13,10 @@ function App() {
 
   return (
     <div className="App">
+
       <ControlledComponentDemo />
+
+      <KeyPressDemo />
 
       <div>
         <button onClick={() => setNumber(number => number + 1)}>+</button>
